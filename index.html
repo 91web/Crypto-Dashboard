@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoBoard Dashboard</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/assets.css">
+    <link rel="stylesheet" href="styles/activity.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="material-icons">hexagon</span>
+                <h1>CryptoBoard</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <span class="material-icons">home</span>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-icons">account_balance_wallet</span>
+                    <span>Assets</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-icons">swap_horiz</span>
+                    <span>Live Trade</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-icons">forum</span>
+                    <span>Forum</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-icons">settings</span>
+                    <span>Settings</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="page-header">
+                <h2>Assets</h2>
+                <button class="btn-primary">More Assets</button>
+            </header>
+
+            <div class="content-grid">
+                <div class="assets-section">
+                    <div class="assets-grid">
+                        <div class="asset-card bitcoin">
+                            <div class="asset-header">
+                                <div class="amount">
+                                    <span class="currency">$</span>
+                                    <span class="value">1,820</span>
+                                </div>
+                                <span class="symbol">Bitcoin</span>
+                            </div>
+                            <div class="asset-stats">
+                                <div class="stat">
+                                    <span class="label">Profit</span>
+                                    <span class="value positive">+2.67%</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="label">Loss</span>
+                                    <span class="value negative">-0.17%</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="label">Norm</span>
+                                    <span class="value">+2.14%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="asset-card ethereum">
+                            <div class="asset-header">
+                                <div class="amount">
+                                    <span class="currency">$</span>
+                                    <span class="value">1,100</span>
+                                </div>
+                                <span class="symbol">Ethereum</span>
+                            </div>
+                            <div class="asset-stats">
+                                <div class="stat">
+                                    <span class="label">Profit</span>
+                                    <span class="value positive">+2.87%</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="label">Loss</span>
+                                    <span class="value negative">-0.07%</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="label">Norm</span>
+                                    <span class="value">+1.04%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="new-asset-card">
+                            + New Asset
+                        </button>
+                    </div>
+
+                    <div class="activity-table">
+                        <div class="table-header">
+                            <h3>Activity</h3>
+                            <button class="btn-text">More Activity</button>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Transactions</th>
+                                    <th>Amount</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="transaction">
+                                            <span class="material-icons icon ethereum">currency_exchange</span>
+                                            <span>Ethereum Purchased</span>
+                                        </div>
+                                    </td>
+                                    <td>0.0454 ETH</td>
+                                    <td>USD $80</td>
+                                    <td><span class="status pending">pending</span></td>
+                                    <td>February 21, 2021</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="transaction">
+                                            <span class="material-icons icon bitcoin">currency_bitcoin</span>
+                                            <span>Bitcoin Purchased</span>
+                                        </div>
+                                    </td>
+                                    <td>0.3 BTC</td>
+                                    <td>USD $150</td>
+                                    <td><span class="status done">done</span></td>
+                                    <td>February 15, 2021</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="profile-section">
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Profile" class="profile-image">
+                            <div class="profile-info">
+                                <h3>Han Ji Pyeong</h3>
+                                <button class="btn-text">Edit Profile</button>
+                            </div>
+                        </div>
+
+                        <div class="account-info">
+                            <h4>Account</h4>
+                            <div class="info-row">
+                                <span>Joined</span>
+                                <span>June 23, 2020</span>
+                            </div>
+                            <div class="info-row">
+                                <span>Assets Total</span>
+                                <span>$ 312,900</span>
+                            </div>
+                        </div>
+
+                        <div class="assets-info">
+                            <h4>Assets</h4>
+                            <div class="info-row">
+                                <span>Bitcoin</span>
+                                <span>23.5 BTC</span>
+                            </div>
+                            <div class="info-row">
+                                <span>Ethereum</span>
+                                <span>189.45 ETH</span>
+                            </div>
+                            <div class="info-row">
+                                <span>Doge</span>
+                                <span>235,500 DOGE</span>
+                            </div>
+                            <div class="info-row">
+                                <span>Ripple</span>
+                                <span>65,100 XRP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

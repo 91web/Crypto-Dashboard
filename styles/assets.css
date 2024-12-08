@@ -1,0 +1,79 @@
+.assets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.asset-card {
+    background-color: #7C4DFF;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.asset-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.amount {
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+}
+
+.amount .currency {
+    opacity: 0.8;
+    font-size: 0.875rem;
+}
+
+.amount .value {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.asset-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.stat .label {
+    opacity: 0.8;
+    font-size: 0.75rem;
+}
+
+.stat .value {
+    font-size: 0.875rem;
+}
+
+.stat .value.positive {
+    color: #A5D6A7;
+}
+
+.stat .value.negative {
+    color: #EF9A9A;
+}
+
+.new-asset-card {
+    border: 2px dashed #7C4DFF;
+    background: none;
+    color: #7C4DFF;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 1rem;
+    min-height: 160px;
+}
+
+.new-asset-card:hover {
+    background-color: #f5f5f5;
+}
