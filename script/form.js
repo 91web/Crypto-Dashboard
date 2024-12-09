@@ -61,4 +61,10 @@ form.addEventListener('submit', function (e) {
 
     // Clear the form after submission
     form.reset();
+
+
+     // Close the popup overlay after form submission
+     popupOverlay.style.display = 'none';
 });
+
+ 
