@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/assets.css">
     <link rel="stylesheet" href="styles/activity.css">
     <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
@@ -101,15 +102,61 @@
                             </div>
                         </div>
 
-                        <button class="new-asset-card">
+                        <button class="new-asset-card" id="Open">
                             + New Asset
                         </button>
                     </div>
 
+                
+                    
+                      <div id="popupOverlay" class="popup-overlay">
+                        <div class="popup-content">
+                          <h2>New Asset</h2>
+                          <p>Add New Assets</p>
+
+
+                          <form id="transaction-form">
+                            <label for="coin">Coin:</label><br>
+                            <select id="coin" name="coin">
+                                <option value="currency_exchange Ethereum Purchased">SOL</option>
+                                <option value="currency_bitcoin Bitcoin Purchased">Binance</option>
+                                <option value="currency_troy Troy Purchased">Troy</option>
+                                <option value="currency_litecoin Litecoin Purchased">Litecoin</option>
+                            </select> <br>
+                
+                            <label for="amount">Amount:</label><br>
+                            <input type="text" id="amount" name="amount" placeholder="Enter amount" required><br>
+                
+                            <label for="total">Total (in USD):</label><br>
+                            <input type="text" id="total" name="total" placeholder="Enter total in USD"  required><br>
+                
+                            <label for="status">Status:</label><br>
+                            <select id="status" name="status">
+                                <option value="status">select status</option>
+                                <option value="pending">Pending</option>
+                                <option value="done">Done</option>
+                            </select> <br><br>
+                
+                            <button type="submit" class="close-btn" class="submit-btn">Add Transaction</button>
+                        </form>
+
+                          <button class="close-btn" id="ClosePopup">Close</button>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+                    
                     <div class="activity-table">
                         <div class="table-header">
                             <h3>Activity</h3>
-                            <button class="btn-text">More Activity</button>
+                            <button class="btn-text" >More Activity</button>
                         </div>
                         <table>
                             <thead>
@@ -197,5 +244,9 @@
             </div>
         </main>
     </div>
+
+
+    <script src="script/form.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
